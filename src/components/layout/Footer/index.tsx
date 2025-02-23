@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { integralCF } from "@/styles/fonts";
 import React from "react";
 import { PaymentBadge, SocialNetworks } from "./footer.types";
-import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import LinksSection from "./LinksSection";
 import Image from "next/image";
@@ -13,7 +13,7 @@ const socialsData: SocialNetworks[] = [
   {
     id: 1,
     icon: <FaTwitter />,
-    url: "https://twitter.com",
+    url: "https://twitter.com/Web3_Dever",
   },
   {
     id: 2,
@@ -28,7 +28,12 @@ const socialsData: SocialNetworks[] = [
   {
     id: 4,
     icon: <FaGithub />,
-    url: "https://github.com/mohammadoftadeh",
+    url: "https://github.com/InspiredDevs",
+  },
+  {
+    id: 5,
+    icon: <FaWhatsapp />,
+    url: "https://wa.me/+2348142659673",
   },
 ];
 
@@ -74,7 +79,7 @@ const Footer = () => {
                   "text-[28px] lg:text-[32px] mb-6",
                 ])}
               >
-                SHOP.CO
+                ShopIt
               </h1>
               <p className="text-black/60 text-sm mb-9">
                 We have clothes that suits your style and which you’re proud to
@@ -103,22 +108,15 @@ const Footer = () => {
           <hr className="h-[1px] border-t-black/10 mb-6" />
           <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center mb-2">
             <p className="text-sm text-center sm:text-left text-black/60 mb-4 sm:mb-0 sm:mr-1">
-              Shop.co © Made by{" "}
+              © 2025 ShopIT. Crafted with care by{" "}
               <Link
-                href="https://github.com/mohammadoftadeh"
+                href="https://github.com/InspiredDevs"
                 className="text-black font-medium"
               >
-                Mohammad Oftadeh
-              </Link>
-              {", "}
-              Designed by{" "}
-              <Link
-                href="https://www.figma.com/@hamzauix"
-                className="text-black font-medium"
-              >
-                Hamza Naeem
-              </Link>
+                Inspired Devs
+              </Link>. All rights reserved.
             </p>
+
             <div className="flex items-center">
               {paymentBadgesData.map((badge, _, arr) => (
                 <span
